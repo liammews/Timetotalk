@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <Helmet>
         <script async defer data-domain="timetotalk.me" src="https://plausible.io/js/plausible.js"></script>
         <title>Timetotalk</title>
-        <link rel="canonical" href="http://timetotalk.me" />
+        <link rel="canonical" href="https://timetotalk.me" />
         <meta name="icon" href="../images/favicon64.png" />
         </Helmet>
         
