@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply min-h-screen m-0 w-full;
+      }
+      html {
+        @apply min-h-screen m-0 w-full;
+      }
+
+}
+
+@layer utilities {
+  .title-background{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .title-background::before{
+    content: "";
+    position: absolute;
+    -webkit-filter: blur(160px) grayscale(100%) brightness(30%);
+    background-image: url(https://cdn.sanity.io/images/j2di4tpb/production/0e4943aa28c0a3acddab7c7c46975a1caf0c58eb-1815x1021.jpg);
+    background-position: center;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    top: 100px;
+    left: 300px;
+    animation-name: orb-move;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 24px;
+  }
+  
+  @keyframes orb-move{
+    0%{
+      transform: rotate(0deg);
+    }
+  
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}
